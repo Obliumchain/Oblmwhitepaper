@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oblium Whitepaper - Complete Technical Documentation</title>
+    <link rel="stylesheet" href="style.css">
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="stars"></div>
+        <div class="stars2"></div>
+        <div class="stars3"></div>
+        <div class="gradient-bg"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo.svg" alt="Oblium Logo" class="logo-img">
+                <h2>OBLIUM</h2>
+                <span class="logo-badge">OBLM</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="whitepaper.html" class="nav-link active">Whitepaper</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://t.me/obliumtoken" class="nav-link" target="_blank">Telegram</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://discord.gg/4UeqJ4qw" class="nav-link" target="_blank">Discord</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://x.com/obliumchain" class="nav-link" target="_blank">Twitter</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Whitepaper Header -->
+    <header class="whitepaper-header">
+        <div class="container">
+            <div class="whitepaper-hero">
+                <h1>OBLIUM (OBLM) WHITE PAPER</h1>
+                <h2>v2.0 (2025)</h2>
+                <p class="whitepaper-subtitle">
+                    The Meme-Powered Token on Solana, Evolving into the AI-Driven Oblium Chain
+                </p>
+                <div class="document-info">
+                    <div class="info-item">
+                        <span class="info-label">Last Updated:</span>
+                        <span class="info-value">December 2024</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Version:</span>
+                        <span class="info-value">2.0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value">Active Development</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Whitepaper Content -->
+    <main class="whitepaper-content">
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Introduction -->
+                <section class="whitepaper-section">
+                    <h2>1. INTRODUCTION</h2>
+                    <p>
+                        Memecoins have showcased the incredible force of community in the crypto landscape. 
+                        Yet, much of this energy often fuels short-lived hype rather than creating lasting 
+                        value or real-world utility.
+                    </p>
+                    <p>
+                        Oblium (OBLM) was created to transform that energy — turning community power into 
+                        a sustainable, purposeful ecosystem.
+                    </p>
+                    <p>
+                        Initially launched as a high-utility SPL token on Solana, Oblium leverages Solana's 
+                        unmatched scalability, sub-second finality, and near-zero transaction fees to deliver 
+                        an engaging, meme-powered experience.
+                    </p>
+                    <div class="highlight-box">
+                        <p>
+                            This white paper presents a clear roadmap for Oblium's evolution — from a community 
+                            token to a purpose-driven blockchain network built for scalability, transparency, and impact.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- What is Oblium -->
+                <section class="whitepaper-section">
+                    <h2>2. WHAT IS OBLIUM (OBLM)?</h2>
+                    <p>
+                        Oblium is a dual-phase project that blends community engagement with advanced blockchain infrastructure.
+                    </p>
+                    
+                    <h3>Phase 1 – The Solana Era</h3>
+                    <p>
+                        Oblium begins as a meme-powered SPL token on Solana. It powers staking, governance, farming, and meme competitions.
+                    </p>
+                    <p>
+                        Users earn Impact Points through participation, which convert monthly into OBLM tokens via a verifiable on-chain process.
+                    </p>
+                    
+                    <h3>Phase 2 – The Oblium Chain</h3>
+                    <p>
+                        Oblium will evolve into a sovereign Layer-1 blockchain built using the Cosmos SDK, secured by Nominated Proof-of-Stake (NPoS).
+                    </p>
+                    <p>
+                        The Oblium Chain is engineered for AI-assisted smart contracts, verifiable data oracles, and cross-chain interoperability.
+                    </p>
+                    
+                    <div class="mission-box">
+                        <p><strong>Oblium is not just a meme — it's a mission:</strong></p>
+                        <p>Built for dreamers. Fueled by believers. Powered by the people.</p>
+                    </div>
+                </section>
+
+                <!-- Core Purpose & Mechanics -->
+                <section class="whitepaper-section">
+                    <h2>3. CORE PURPOSE & MECHANICS</h2>
+                    <p>
+                        Oblium's foundation lies in transforming participation into measurable value through a transparent reward system:
+                    </p>
+                    
+                    <h3>1. Gamified Points Engine</h3>
+                    <p>Users earn non-transferable Impact Points by:</p>
+                    <ul>
+                        <li>Providing liquidity to Oblium-approved pools</li>
+                        <li>Participating in governance and proposals</li>
+                        <li>Completing quests, educational challenges, or meme creation contests</li>
+                    </ul>
+                    
+                    <h3>2. Monthly Conversion Cycle</h3>
+                    <p>
+                        A smart contract takes a monthly snapshot of users' Impact Points. An algorithm — factoring in total network activity, TVL, and user engagement — determines each participant's OBLM rewards.
+                    </p>
+                    <p>
+                        This creates a cycle of fairness and sustainability, keeping users actively engaged while aligning rewards with real ecosystem growth.
+                    </p>
+                </section>
+
+                <!-- Tokenomics -->
+                <section class="whitepaper-section">
+                    <h2>4. TOKENOMICS OVERVIEW</h2>
+                    
+                    <div class="tokenomics-grid">
+                        <div class="tokenomics-item">
+                            <h4>Token Name</h4>
+                            <p>Oblium</p>
+                        </div>
+                        <div class="tokenomics-item">
+                            <h4>Symbol</h4>
+                            <p>$OBLM</p>
+                        </div>
+                        <div class="tokenomics-item">
+                            <h4>Total Supply</h4>
+                            <p>3,000,000,000</p>
+                        </div>
+                        <div class="tokenomics-item">
+                            <h4>Blockchain</h4>
+                            <p>Solana (transitioning to Oblium Chain)</p>
+                        </div>
+                    </div>
+                    
+                    <h3>Token Allocation</h3>
+                    <div class="allocation-grid">
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 30%; background: #6366f1;"></div>
+                            <span class="allocation-label">Presale/Public (30%)</span>
+                            <span class="allocation-value">900M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 30%; background: #10b981;"></div>
+                            <span class="allocation-label">Airdrop Farmers (30%)</span>
+                            <span class="allocation-value">900M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #f59e0b;"></div>
+                            <span class="allocation-label">Liquidity (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #ef4444;"></div>
+                            <span class="allocation-label">Team & Advisors (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #8b5cf6;"></div>
+                            <span class="allocation-label">Ecosystem & Staking (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #06b6d4;"></div>
+                            <span class="allocation-label">Treasury & Partnerships (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Waitlist CTA -->
+                <section class="waitlist-cta">
+                    <div class="waitlist-container">
+                        <h3>Ready to Join the Oblium Revolution?</h3>
+                        <p>Get notified when mining starts and be part of the future of AI-powered blockchain</p>
+                        <a href="index.html#waitlist" class="cta-button primary">
+                            <img src="assets/email-icon.svg" alt="Email" class="btn-icon">
+                            Join Mining Waitlist
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>z
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="nav-logo">
+                        <img src="assets/logo.svg" alt="Oblium Logo" class="logo-img">
+                        <h2>OBLIUM</h2>
+                        <span class="logo-badge">OBLM</span>
+                    </div>
+                    <p>Where memes meet mission. Powered by community, driven by AI.</p>
+                    <div class="social-links">
+                        <a href="https://discord.gg/4UeqJ4qw" target="_blank" class="social-link">
+                            <img src="assets/discord-icon.svg" alt="Discord">
+                        </a>
+                        <a href="https://x.com/obliumchain" target="_blank" class="social-link">
+                            <img src="assets/twitter-icon.svg" alt="Twitter">
+                        </a>
+                        <a href="https://t.me/obliumtoken" target="_blank" class="social-link">
+                            <img src="assets/telegram-icon.svg" alt="Telegram">
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Project</h4>
+                        <a href="index.html">Home</a>
+                        <a href="whitepaper.html">Whitepaper</a>
+                        <a href="index.html#waitlist">Waitlist</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Community</h4>
+                        <a href="https://t.me/obliumtoken" target="_blank">Telegram</a>
+                        <a href="https://discord.gg/4UeqJ4qw" target="_blank">Discord</a>
+                        <a href="https://x.com/obliumchain" target="_blank">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Oblium (OBLM). All rights reserved. Built for the community, by the community.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
