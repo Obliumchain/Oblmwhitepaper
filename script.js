@@ -1,15 +1,20 @@
-// script.js - Complete fixed version with corrected URL
+// script.js - Final version using Email.js
 
-// Supabase configuration - CORRECTED URL
-const SUPABASE_CONFIG = {
-    url: 'https://xnukdvfjyklwmpdfhhzx.supabase.co',
-    key: 'sb_publishable_G8Xi3DgKwUww8CJIjZbSNw_gc20o97o'
+// --- START Email.js Configuration ---
+// Keys populated from your screenshots
+const EMAILJS_CONFIG = {
+    PUBLIC_KEY: 'A2yfA0IBjBCYwqRPH', //
+    SERVICE_ID: 'service_e8afa0q', //
+    TEMPLATE_ID: 'template_df088pr' //
 };
 
-console.log('Supabase Config loaded with URL:', SUPABASE_CONFIG.url);
+// Initialize Email.js
+(function() {
+    emailjs.init({ publicKey: EMAILJS_CONFIG.PUBLIC_KEY });
+    console.log('Email.js initialized.');
+})();
+// --- END Email.js Configuration ---
 
-// Initialize Supabase
-const supabase = window.supabase.createClient(SUPABASE_CONFIG.url, SUPABASE_CONFIG.key);
 
 // Enhanced Mobile Navigation
 const hamburger = document.querySelector('.hamburger');
@@ -81,7 +86,7 @@ if (hamburger && navMenu) {
     console.error('Mobile menu elements not found!');
 }
 
-// Waitlist Form Submission with Supabase
+// Waitlist Form Submission with Email.js
 const waitlistForm = document.getElementById('waitlistForm');
 
 if (waitlistForm) {
@@ -119,7 +124,7 @@ function isValidEmail(email) {
     return emailRegex.test(email);
 }
 
-// Submit to Supabase
+// Submit to Email.js
 async function submitToWaitlist(email, wallet) {
     const submitBtn = document.querySelector('.submit-btn');
     const originalText = submitBtn.innerHTML;
@@ -127,45 +132,30 @@ async function submitToWaitlist(email, wallet) {
     // Show loading state
     submitBtn.innerHTML = '<span class="btn-icon">⏳</span>Joining Waitlist...';
     submitBtn.disabled = true;
+
+    // These param keys MUST match the variables in your Email.js template
+    const templateParams = {
+        from_email: email,
+        wallet_address: wallet || 'N/A' // Send 'N/A' if wallet is empty
+    };
     
     try {
-        console.log('Starting Supabase insert...');
+        console.log('Sending email via Email.js...');
         
-        // Insert into Supabase
-        const { data, error } = await supabase
-            .from('waitlist')
-            .insert([
-                { 
-                    email: email,
-                    wallet_address: wallet || null,
-                    created_at: new Date().toISOString()
-                }
-            ])
-            .select();
+        const response = await emailjs.send(
+            EMAILJS_CONFIG.SERVICE_ID, 
+            EMAILJS_CONFIG.TEMPLATE_ID, 
+            templateParams
+        );
 
-        console.log('Supabase response:', { data, error });
-
-        if (error) {
-            console.error('Supabase error details:', error);
-            
-            if (error.code === '23505') { // Unique violation
-                showNotification('This email is already on the waitlist!', 'info');
-            } else if (error.message.includes('JWT')) {
-                showNotification('API key error - please check your Supabase configuration', 'error');
-            } else {
-                showNotification('Error: ' + error.message, 'error');
-            }
-        } else {
-            showNotification('🎉 Successfully joined the Oblium mining waitlist! We\'ll notify you when mining starts.', 'success');
-            console.log('Data inserted successfully:', data[0]);
-            
-            // Reset form
-            waitlistForm.reset();
-        }
+        console.log('Email.js SUCCESS:', response);
+        showNotification('🎉 Successfully joined the Oblium mining waitlist! We\'ll notify you when mining starts.', 'success');
+        waitlistForm.reset();
         
     } catch (error) {
-        console.error('Unexpected error:', error);
-        showNotification('Sorry, there was an unexpected error. Please try again.', 'error');
+        console.error('Email.js FAILED:', error);
+        // Use error.text for a more specific message if available
+        showNotification('Error: ' + (error.text || 'Failed to send. Please try again.'), 'error');
     } finally {
         // Restore button
         submitBtn.innerHTML = originalText;
@@ -173,26 +163,10 @@ async function submitToWaitlist(email, wallet) {
     }
 }
 
-// Test Supabase connection on page load
+// Removed Supabase connection test
+
 document.addEventListener('DOMContentLoaded', async function() {
-    console.log('Testing Supabase connection...');
-    
-    try {
-        // Simple test query
-        const { data, error } = await supabase
-            .from('waitlist')
-            .select('count')
-            .limit(1);
-            
-        if (error) {
-            console.error('Supabase connection test failed:', error);
-        } else {
-            console.log('✅ Supabase connection test passed!');
-            showNotification('Connected to Oblium database successfully!', 'success');
-        }
-    } catch (error) {
-        console.error('Supabase connection test error:', error);
-    }
+    console.log('DOM content loaded. Initializing animations.');
     
     // Initialize animations
     createStars('.stars', 100);
@@ -222,7 +196,7 @@ document.addEventListener('DOMContentLoaded', async function() {
     });
 });
 
-// Notification system
+// Notification system (Unchanged)
 function showNotification(message, type = 'info') {
     const existingNotification = document.querySelector('.notification');
     if (existingNotification) {
