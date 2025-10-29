@@ -458,3 +458,42 @@ window.addEventListener('scroll', () => {
 });
 
 console.log('Oblium website script loaded successfully!');
+// Social Media Popup Functionality
+const joinCommunityBtn = document.getElementById('joinCommunityBtn');
+const socialPopup = document.getElementById('socialPopup');
+const closePopup = document.getElementById('closePopup');
+
+if (joinCommunityBtn && socialPopup) {
+    // Open popup
+    joinCommunityBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        console.log('Opening social media popup');
+        socialPopup.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    });
+
+    // Close popup
+    closePopup.addEventListener('click', () => {
+        console.log('Closing social media popup');
+        socialPopup.classList.remove('active');
+        document.body.style.overflow = ''; // Restore scrolling
+    });
+
+    // Close popup when clicking overlay
+    socialPopup.addEventListener('click', (e) => {
+        if (e.target === socialPopup || e.target.classList.contains('popup-overlay')) {
+            socialPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+
+    // Close popup with Escape key
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && socialPopup.classList.contains('active')) {
+            socialPopup.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+} else {
+    console.error('Social popup elements not found!');
+}
