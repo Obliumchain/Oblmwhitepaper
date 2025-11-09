@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oblium (OBLM) - Meme-Powered AI Blockchain</title>
+    <title>Oblium Whitepaper - Complete Technical Documentation</title>
     <link rel="stylesheet" href="style.css">
-    
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Exo+2:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Animated Background -->
     <div class="bg-animation">
         <div class="stars"></div>
         <div class="stars2"></div>
@@ -19,6 +19,7 @@
         <div class="gradient-bg"></div>
     </div>
 
+    <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -28,19 +29,17 @@
             </div>
             <ul class="nav-menu">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">Home</a>
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a href="https://t.me/obliumtoken" class="nav-link" target="_blank">Telegram</a>
                 </li>
                 <li class="nav-item">
-                    <a href="whitepaper.html" class="nav-link">Whitepaper</a>
+                    <a href="https://discord.gg/4UeqJ4qw" class="nav-link" target="_blank">Discord</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://t.me/obliumchain/1" class="nav-link" target="_blank">Telegram</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://discord.gg/m5MAy2xct" class="nav-link" target="_blank">Discord</a>
-                </li>
-                <li class="nav-item">
-                    <a href="https://x.com/obluimchain?s=21" class="nav-link" target="_blank">Twitter</a>
+                    <a href="https://x.com/obliumchain" class="nav-link" target="_blank">Twitter</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -51,144 +50,1089 @@
         </div>
     </nav>
 
-    <section class="hero">
+    <!-- Whitepaper Header -->
+    <header class="whitepaper-header">
         <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span>Powered by Solana • AI-Driven Future</span>
-                </div>
-                <h1 class="hero-title">
-                    WHERE <span class="gradient-text">MEMES</span> MEET
-                    <span class="gradient-text">MISSION</span>
-                </h1>
-                <p class="hero-subtitle">
-                    Oblium is evolving from a meme-powered Solana token into the AI-driven Oblium Chain - 
-                    building the future of verifiable human and social development applications.
+            <div class="whitepaper-hero">
+                <h1>OBLIUM (OBLM) WHITE PAPER</h1>
+                <h2>v2.0 (2025)</h2>
+                <p class="whitepaper-subtitle">
+                    The Meme-Powered Token on Solana, Evolving into the AI-Driven Oblium Chain
                 </p>
-                <div class="hero-actions">
-                    <a href="whitepaper.html" class="cta-button primary">
-                        <img src="assets/whitepaper-icon.svg" alt="Whitepaper" class="btn-icon">
-                        Read Whitepaper
-                    </a>
-                    <a href="#" class="cta-button secondary" id="joinCommunityBtn">
-    <img src="assets/ambassador-icon.svg" alt="Community" class="btn-icon">
-    Join Community
-                    </a>
-                    <a href="https://tally.so/r/n0p2XQ" class="cta-button secondary" target="_blank">
-                        <img src="assets/ambassador-icon.svg" alt="Ambassador" class="btn-icon">
-                       Be An Ambassador
-                    </a>
+                <div class="document-info">
+                    <div class="info-item">
+                        <span class="info-label">Last Updated:</span>
+                        <span class="info-value">December 2024</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Version:</span>
+                        <span class="info-value">2.0</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-label">Status:</span>
+                        <span class="info-value">Active Development</span>
+                    </div>
                 </div>
-               
-                <div class="hero-stats">
-    <div class="stat">
-        <div class="stat-value">11/08/2025</div>
-        <div class="stat-label">Mining Starts</div>
-    </div>
-    <div class="stat">
-        <div class="stat-value">3B</div>
-        <div class="stat-label">Total Supply</div>
-    </div>
-    <div class="stat">
-        <div class="stat-value">$10M</div>
-        <div class="stat-label">Total Raise</div>
-    </div>
-    <div class="stat">
-        <div class="stat-value">AI+<br>Blockchain</div>
-        <div class="stat-label">Technology</div>
-    </div>
-</div>
-
             </div>
         </div>
-    </section>
+    </header>
 
-    <section class="investors-section">
+    <!-- Whitepaper Content -->
+    <main class="whitepaper-content">
         <div class="container">
-            <div class="section-header">
-                <h2>CONSORTIUM OF VENTURE CAPITALISTS, WEB3 AND ANGEL INVESTORS </h2>
-                <p>Backed by industry leaders and strategic partners</p>
-            </div>
-            <div class="investors-logos">
-                <div class="investor-logo">
-                    <img src="assets/Solana.svg" alt="Solana" class="logo-img">
-                    <span>Solana</span>
-                </div>
-                <div class="investor-logo">
-                    <img src="assets/Kraken.svg" alt="Kraken" class="logo-img">
-                    <span>Kraken</span>
-                </div>
-                </div>
-        </div>
-    </section>
-
-    <section class="waitlist-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Join the Mining Waitlist</h2>
-                <p>Be the first to know when Oblium mining starts and get exclusive early access benefits</p>
-            </div>
-            <div class="waitlist-container">
-                <form class="waitlist-form" id="waitlistForm">
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" placeholder="Enter your email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="wallet">Solana Wallet Address (Optional)</label>
-                        <input type="text" id="wallet" placeholder="Enter your Solana wallet address">
-                    </div>
-                    <button type="submit" class="submit-btn">
-                        <img src="assets/email-icon.svg" alt="Email" class="btn-icon">
-                        Join Waitlist
-                    </button>
-                    <p class="form-note">
-                        By joining the waitlist, you agree to receive updates about Oblium mining and ecosystem developments.
+            <div class="content-wrapper">
+                <!-- Introduction -->
+                <section class="whitepaper-section">
+                    <h2>1. INTRODUCTION</h2>
+                    <p>
+                        Memecoins have showcased the incredible force of community in the crypto landscape. 
+                        Yet, much of this energy often fuels short-lived hype rather than creating lasting 
+                        value or real-world utility.
                     </p>
-                </form>
+                    <p>
+                        Oblium (OBLM) was created to transform that energy — turning community power into 
+                        a sustainable, purposeful ecosystem.
+                    </p>
+                    <p>
+                        Initially launched as a high-utility SPL token on Solana, Oblium leverages Solana's 
+                        unmatched scalability, sub-second finality, and near-zero transaction fees to deliver 
+                        an engaging, meme-powered experience.
+                    </p>
+                    <div class="highlight-box">
+                        <p>
+                            This white paper presents a clear roadmap for Oblium's evolution — from a community 
+                            token to a purpose-driven blockchain network built for scalability, transparency, and impact.
+                        </p>
+                    </div>
+                </section>
+
+                <!-- Problem Statement -->
+                <section class="whitepaper-section">
+                    <h2>2. PROBLEM STATEMENT</h2>
+                    <p>
+                        Meme tokens have driven massive adoption, yet most suffer from common weaknesses:
+                    </p>
+                    <ul>
+                        <li>No real technology or scalable ecosystem</li>
+                        <li>Centralized control and unfair launches</li>
+                        <li>Short-term hype with no lasting utility</li>
+                        <li>Extractive models that drain community value</li>
+                    </ul>
+                    <p>
+                        Oblium bridges this gap by combining Solana's high-speed blockchain with community-first 
+                        tokenomics, staking, and meme-powered NFTs — all governed by holders.
+                    </p>
+                </section>
+
+                <!-- What is Oblium -->
+                <section class="whitepaper-section">
+                    <h2>3. WHAT IS OBLIUM (OBLM)?</h2>
+                    <p>
+                        Oblium is a dual-phase project that blends community engagement with advanced blockchain infrastructure.
+                    </p>
+                    
+                    <h3>Phase 1 – The Solana Era</h3>
+                    <p>
+                        Oblium begins as a meme-powered SPL token on Solana. It powers staking, governance, farming, and meme competitions.
+                    </p>
+                    <p>
+                        Users earn Impact Points through participation, which convert monthly into OBLM tokens via a verifiable on-chain process.
+                    </p>
+                    
+                    <h3>Phase 2 – The Oblium Chain</h3>
+                    <p>
+                        Oblium will evolve into a sovereign Layer-1 blockchain built using the Cosmos SDK, secured by Nominated Proof-of-Stake (NPoS).
+                    </p>
+                    <p>
+                        The Oblium Chain is engineered for AI-assisted smart contracts, verifiable data oracles, and cross-chain interoperability.
+                    </p>
+                    
+                    <div class="mission-box">
+                        <p><strong>Oblium is not just a meme — it's a mission:</strong></p>
+                        <p>Built for dreamers. Fueled by believers. Powered by the people.</p>
+                    </div>
+                </section>
+
+                <!-- Vision & Purpose -->
+                <section class="whitepaper-section">
+                    <h2>4. VISION & PURPOSE — THE OBLIUM BLOCKCHAIN</h2>
+                    
+                    <h3>Vision</h3>
+                    <p>
+                        To merge the transparency of blockchain with the intelligence of AI, building a decentralized 
+                        ecosystem that empowers human creativity, education, and ethical innovation.
+                    </p>
+                    
+                    <h3>Purpose</h3>
+                    <p>
+                        Oblium Chain will serve as a public-good blockchain — ensuring fair access to AI tools, 
+                        verifiable data integrity, and transparent governance.
+                    </p>
+                    <p>
+                        It is built to prove that memes, AI, and human purpose can coexist within one powerful 
+                        decentralized network.
+                    </p>
+                    
+                    <h3>Engagement Through Monthly Conversion</h3>
+                    <p>
+                        Every 30 days, community-earned points are converted into real tokens, ensuring constant 
+                        engagement and reward circulation.
+                    </p>
+                    <p>
+                        This predictable rhythm keeps the community excited, consistent, and fair — turning 
+                        participation into real value.
+                    </p>
+                    <div class="highlight-box">
+                        <p>In Oblium, every meme, every action, and every contribution counts.</p>
+                    </div>
+                </section>
+
+                <!-- Core Innovations & Technical Architecture -->
+                <section class="whitepaper-section">
+                    <h2>5. CORE INNOVATIONS & TECHNICAL ARCHITECTURE</h2>
+                    
+                    <h3>1. Decentralization & Security</h3>
+                    <p><strong>Consensus:</strong> Based on Nominated Proof-of-Stake (NPoS), ensuring validator diversity and community-driven security.</p>
+                    <p><strong>Data Integrity:</strong> Uses Zero-Knowledge Proofs (ZKPs) to verify data authenticity without exposing sensitive information.</p>
+                    
+                    <h3>2. AI Integration</h3>
+                    <p><strong>Off-Chain AI Oracles:</strong> AI models run off-chain via Chainlink Functions or similar networks, sending cryptographically proven results to Oblium contracts.</p>
+                    <p><strong>Bias Transparency:</strong> Each verified AI model logs its dataset hash on-chain, enabling permanent auditability.</p>
+                    
+                    <h3>3. Scalability & Efficiency</h3>
+                    <p><strong>Architecture:</strong> Built using the Cosmos SDK, achieving 1,000–10,000 TPS through optimized block propagation.</p>
+                    <p><strong>IBC Connectivity:</strong> Seamless interoperability with other Cosmos-based networks.</p>
+                    
+                    <h3>4. Interoperability</h3>
+                    <p>Native bridges to Solana and Ethereum ensure liquidity continuity.</p>
+                    <p>Full IBC compatibility enhances cross-chain communication.</p>
+                    
+                    <h3>5. Sustainability</h3>
+                    <p>Energy-efficient PoS validation.</p>
+                    <p>0.5% of all network fees allocated to community-led social impact projects aligned with the UN SDGs.</p>
+                </section>
+
+                <!-- Utility & Ecosystem -->
+                <section class="whitepaper-section">
+                    <h2>6. UTILITY & ECOSYSTEM</h2>
+                    <p>
+                        Oblium delivers value beyond memes, with real utility designed for long-term sustainability:
+                    </p>
+                    
+                    <h3>Staking & Yield Farming</h3>
+                    <p>Stake OBLM to earn rewards. Boost APY through meme contests or NFT multipliers.</p>
+                    
+                    <h3>NFT Meme Collections</h3>
+                    <p>Exclusive NFTs unlock:</p>
+                    <ul>
+                        <li>Yield boosts</li>
+                        <li>Community access</li>
+                        <li>DAO voting rights</li>
+                    </ul>
+                    
+                    <h3>Treasury & Partnerships</h3>
+                    <p>Funds ecosystem growth, listings, and campaigns — all transparently managed on-chain.</p>
+                    
+                    <h3>DeFi Integration</h3>
+                    <p>Launching with Raydium, expanding to cross-chain protocols and GameFi integrations.</p>
+                </section>
+
+                <!-- Staking Mechanics -->
+                <section class="whitepaper-section">
+                    <h2>7. STAKING MECHANICS</h2>
+                    <p>
+                        To ensure healthy token dynamics and reward long-term holders, Oblium introduces multiple 
+                        staking options designed to support both flexibility and commitment.
+                    </p>
+                    
+                    <h3>Community Staking Pool</h3>
+                    <p><strong>Lockup:</strong> 1–6 months (flexible)</p>
+                    <p><strong>APY:</strong> 15–45% based on duration</p>
+                    <p><strong>Purpose:</strong> Incentivize holders to maintain stability through early vesting periods</p>
+                    
+                    <h3>Ecosystem Builder Pool</h3>
+                    <p><strong>Lockup:</strong> 12-month commitment</p>
+                    <p><strong>APY:</strong> 60–80% + ecosystem rewards</p>
+                    <p><strong>Bonus:</strong> Early access to AI tools, governance power boost, and special ecosystem perks</p>
+                    
+                    <h3>Liquidity Provider Staking</h3>
+                    <p><strong>Provide LP:</strong> OBLM–SOL pairs</p>
+                    <p><strong>APY:</strong> 25–35% + trading fees</p>
+                    <p><strong>Additional Perks:</strong> NFT airdrops, exclusive badges, and tier-based platform privileges</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Staking Pools to Manage Vesting Pressure</strong></p>
+                    </div>
+                </section>
+
+                <!-- Core Purpose & Mechanics -->
+                <section class="whitepaper-section">
+                    <h2>8. CORE PURPOSE & MECHANICS</h2>
+                    <p>
+                        Oblium's foundation lies in transforming participation into measurable value through a transparent reward system:
+                    </p>
+                    
+                    <h3>1. Gamified Points Engine</h3>
+                    <p>Users earn non-transferable Impact Points by:</p>
+                    <ul>
+                        <li>Providing liquidity to Oblium-approved pools</li>
+                        <li>Participating in governance and proposals</li>
+                        <li>Completing quests, educational challenges, or meme creation contests</li>
+                    </ul>
+                    
+                    <h3>2. Monthly Conversion Cycle</h3>
+                    <p>
+                        A smart contract takes a monthly snapshot of users' Impact Points. An algorithm — factoring in total network activity, TVL, and user engagement — determines each participant's OBLM rewards.
+                    </p>
+                    <p>
+                        This creates a cycle of fairness and sustainability, keeping users actively engaged while aligning rewards with real ecosystem growth.
+                    </p>
+                    
+                    <h3>3. Bonus Rewards & Leaderboards</h3>
+                    <p>
+                        To make farming more interactive, Oblium introduces bonus rewards for top performers each month.
+                    </p>
+                    <p>The most active farmers unlock:</p>
+                    <ul>
+                        <li>Token boosts</li>
+                        <li>Exclusive NFTs</li>
+                        <li>Special community perks</li>
+                    </ul>
+                    <p>
+                        A global leaderboard showcases top contributors — turning farming into a social and competitive 
+                        experience, inspiring users to climb higher and stay engaged.
+                    </p>
+                </section>
+
+                <!-- Fair & Transparent Token Claiming -->
+                <section class="whitepaper-section">
+                    <h2>9. FAIR & TRANSPARENT TOKEN CLAIMING</h2>
+                    <p>
+                        One of the most frustrating experiences in crypto launches is the confusion between TGE 
+                        (Token Generation Event), claiming, and exchange listing.
+                    </p>
+                    <p>
+                        Many projects force users to claim minutes before listing, causing site crashes, network 
+                        congestion, and unfair access delays.
+                    </p>
+                    <p>
+                        <strong>Oblium is different.</strong>
+                    </p>
+                    <p>
+                        We're committed to fairness and transparency — ensuring every holder has an equal start.
+                    </p>
+                    <p>
+                        That's why Oblium will separate the Claim Date from the Listing Date:
+                    </p>
+                    
+                    <h3>Claim Date (TGE)</h3>
+                    <p>Users can claim tokens smoothly, ahead of time.</p>
+                    
+                    <h3>Listing Date</h3>
+                    <p>Exchange trading begins after all participants have had a fair chance to claim.</p>
+                    
+                    <p>This guarantees:</p>
+                    <ul>
+                        <li>No rushed last-minute claims</li>
+                        <li>Equal opportunity for every holder</li>
+                        <li>A smoother, community-friendly launch</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Claiming is for the community. Listing is for the market.</strong></p>
+                    </div>
+                </section>
+
+                <!-- Tokenomics -->
+                <section class="whitepaper-section">
+                    <h2>10. TOKENOMICS OVERVIEW</h2>
+                    
+                    <div class="tokenomics-grid">
+                        <div class="tokenomics-item">
+                            <h4>Token Name</h4>
+                            <p>Oblium</p>
+                        </div>
+                        <div class="tokenomics-item">
+                            <h4>Symbol</h4>
+                            <p>$OBLM</p>
+                        </div>
+                        <div class="tokenomics-item">
+                            <h4>Total Supply</h4>
+                            <p>3,000,000,000</p>
+                        </div>
+                        <div class="tokenomics-item">
+                            <h4>Blockchain</h4>
+                            <p>Solana (transitioning to Oblium Chain)</p>
+                        </div>
+                    </div>
+
+                    <!-- Pie Chart Visualization -->
+                    <div class="tokenomics-visualization">
+                        <h3>Token Distribution</h3>
+                        <div class="pie-chart-container">
+                            <div class="pie-chart-wrapper">
+                                <div class="pie-chart">
+                                    <div class="pie-segment" data-percentage="30" data-color="#6366f1" data-label="Presale/Public Sale" data-start="0"></div>
+                                    <div class="pie-segment" data-percentage="30" data-color="#10b981" data-label="Airdrop Farmers" data-start="30"></div>
+                                    <div class="pie-segment" data-percentage="10" data-color="#f59e0b" data-label="Liquidity & Listings" data-start="60"></div>
+                                    <div class="pie-segment" data-percentage="10" data-color="#ef4444" data-label="Team & Advisors" data-start="70"></div>
+                                    <div class="pie-segment" data-percentage="10" data-color="#8b5cf6" data-label="Ecosystem/Staking" data-start="80"></div>
+                                    <div class="pie-segment" data-percentage="10" data-color="#06b6d4" data-label="Treasury & Partnerships" data-start="90"></div>
+                                </div>
+                                <div class="pie-center">
+                                    <div class="total-supply">3B</div>
+                                    <div class="total-label">Total Supply</div>
+                                </div>
+                            </div>
+                            <div class="pie-legend">
+                                <div class="legend-item" data-category="presale">
+                                    <span class="legend-color" style="background: #6366f1;"></span>
+                                    <span class="legend-text">Presale/Public Sale - 900M (30%)</span>
+                                </div>
+                                <div class="legend-item" data-category="airdrop">
+                                    <span class="legend-color" style="background: #10b981;"></span>
+                                    <span class="legend-text">Airdrop Farmers - 900M (30%)</span>
+                                </div>
+                                <div class="legend-item" data-category="liquidity">
+                                    <span class="legend-color" style="background: #f59e0b;"></span>
+                                    <span class="legend-text">Liquidity & Listings - 300M (10%)</span>
+                                </div>
+                                <div class="legend-item" data-category="team">
+                                    <span class="legend-color" style="background: #ef4444;"></span>
+                                    <span class="legend-text">Team & Advisors - 300M (10%)</span>
+                                </div>
+                                <div class="legend-item" data-category="ecosystem">
+                                    <span class="legend-color" style="background: #8b5cf6;"></span>
+                                    <span class="legend-text">Ecosystem/Staking - 300M (10%)</span>
+                                </div>
+                                <div class="legend-item" data-category="treasury">
+                                    <span class="legend-color" style="background: #06b6d4;"></span>
+                                    <span class="legend-text">Treasury & Partnerships - 300M (10%)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Takeaways -->
+                    <div class="key-takeaways">
+                        <h3>Key Takeaways</h3>
+                        <div class="takeaways-grid">
+                            <div class="takeaway-item">
+                                <div class="takeaway-icon">💰</div>
+                                <div class="takeaway-content">
+                                    <h4>Presale/Public (30%)</h4>
+                                    <p>Sufficient funding without oversupply</p>
+                                </div>
+                            </div>
+                            <div class="takeaway-item">
+                                <div class="takeaway-icon">🎁</div>
+                                <div class="takeaway-content">
+                                    <h4>Airdrop (30%)</h4>
+                                    <p>Big enough for virality, with vesting to prevent dumps</p>
+                                </div>
+                            </div>
+                            <div class="takeaway-item">
+                                <div class="takeaway-icon">💧</div>
+                                <div class="takeaway-content">
+                                    <h4>Liquidity (10%)</h4>
+                                    <p>Deep, stable pools across Raydium & CEXs</p>
+                                </div>
+                            </div>
+                            <div class="takeaway-item">
+                                <div class="takeaway-icon">👥</div>
+                                <div class="takeaway-content">
+                                    <h4>Team (10%)</h4>
+                                    <p>Locked and vested for long-term alignment</p>
+                                </div>
+                            </div>
+                            <div class="takeaway-item">
+                                <div class="takeaway-icon">⚡</div>
+                                <div class="takeaway-content">
+                                    <h4>Ecosystem/Staking (10%)</h4>
+                                    <p>Ensures engagement and growth utility</p>
+                                </div>
+                            </div>
+                            <div class="takeaway-item">
+                                <div class="takeaway-icon">🏦</div>
+                                <div class="takeaway-content">
+                                    <h4>Treasury (10%)</h4>
+                                    <p>Fuels expansion, listings, and partnerships</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Detailed Allocation -->
+                    <h3>Detailed Token Allocation</h3>
+                    <div class="allocation-grid">
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 30%; background: #6366f1;"></div>
+                            <span class="allocation-label">Presale/Public Sale (30%)</span>
+                            <span class="allocation-value">900M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 30%; background: #10b981;"></div>
+                            <span class="allocation-label">Airdrop Farmers (30%)</span>
+                            <span class="allocation-value">900M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #f59e0b;"></div>
+                            <span class="allocation-label">Liquidity & Listings (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #ef4444;"></div>
+                            <span class="allocation-label">Team & Advisors (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #8b5cf6;"></div>
+                            <span class="allocation-label">Ecosystem/Staking (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                        <div class="allocation-item">
+                            <div class="allocation-bar" style="width: 10%; background: #06b6d4;"></div>
+                            <span class="allocation-label">Treasury & Partnerships (10%)</span>
+                            <span class="allocation-value">300M OBLM</span>
+                        </div>
+                    </div>
+                </section>
+                <!-- Team & Advisors Vesting Schedule -->
+<section class="whitepaper-section">
+    <h2>11. TEAM & ADVISORS VESTING SCHEDULE</h2>
+    
+    <div class="vesting-description">
+        <p>
+            To ensure strong alignment between the Oblium team and the community, 10% of the total supply 
+            (300,000,000 OBLM) is reserved for the team and advisors.
+        </p>
+        <p>
+            These tokens are locked in a secure vesting smart contract with the following schedule:
+        </p>
+        
+        <div class="vesting-details">
+            <div class="vesting-item">
+                <span class="vesting-label">Cliff Period:</span>
+                <span class="vesting-value">March–August 2026 → No tokens released</span>
+            </div>
+            <div class="vesting-item">
+                <span class="vesting-label">Unlock Schedule:</span>
+                <span class="vesting-value">50M OBLM released each month from Sep 2026 to Feb 2027</span>
+            </div>
+            <div class="vesting-item">
+                <span class="vesting-label">Total Vested:</span>
+                <span class="vesting-value">300M OBLM fully unlocked by Feb 2027</span>
             </div>
         </div>
-    </section>
+        
+        <div class="vesting-highlight">
+            <p>✅ This ensures transparency, prevents early dumping, and aligns incentives between the team and the long-term success of Oblium.</p>
+        </div>
+    </div>
 
-    <section class="features-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Oblium?</h2>
-                <p>Discover what makes Oblium the next evolution in meme-powered blockchain technology</p>
+    <!-- Vesting Chart Visualization -->
+    <div class="vesting-chart-container">
+        <h3>Team & Advisors Vesting Schedule (300M OBLM)</h3>
+        
+        <div class="vesting-chart">
+            <!-- Chart bars container -->
+            <div class="chart-bars-container">
+                <div class="chart-bars">
+                    <!-- Cliff Period (Mar 2026 - Aug 2026) -->
+                    <div class="chart-bar-group">
+                        <div class="chart-bar cliff" data-tokens="0" data-month="Mar 2026">
+                            <div class="bar-fill" style="height: 5%"></div>
+                        </div>
+                        <span class="bar-label">0</span>
+                        <span class="month-label">Mar 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar cliff" data-tokens="0" data-month="Apr 2026">
+                            <div class="bar-fill" style="height: 5%"></div>
+                        </div>
+                        <span class="bar-label">0</span>
+                        <span class="month-label">Apr 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar cliff" data-tokens="0" data-month="May 2026">
+                            <div class="bar-fill" style="height: 5%"></div>
+                        </div>
+                        <span class="bar-label">0</span>
+                        <span class="month-label">May 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar cliff" data-tokens="0" data-month="Jun 2026">
+                            <div class="bar-fill" style="height: 5%"></div>
+                        </div>
+                        <span class="bar-label">0</span>
+                        <span class="month-label">Jun 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar cliff" data-tokens="0" data-month="Jul 2026">
+                            <div class="bar-fill" style="height: 5%"></div>
+                        </div>
+                        <span class="bar-label">0</span>
+                        <span class="month-label">Jul 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar cliff" data-tokens="0" data-month="Aug 2026">
+                            <div class="bar-fill" style="height: 5%"></div>
+                        </div>
+                        <span class="bar-label">0</span>
+                        <span class="month-label">Aug 2026</span>
+                    </div>
+                    
+                    <!-- Unlock Period (Sep 2026 - Feb 2027) -->
+                    <div class="chart-bar-group">
+                        <div class="chart-bar unlock" data-tokens="50M" data-month="Sep 2026">
+                            <div class="bar-fill" style="height: 16.7%"></div>
+                        </div>
+                        <span class="bar-label">50M</span>
+                        <span class="month-label">Sep 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar unlock" data-tokens="50M" data-month="Oct 2026">
+                            <div class="bar-fill" style="height: 16.7%"></div>
+                        </div>
+                        <span class="bar-label">50M</span>
+                        <span class="month-label">Oct 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar unlock" data-tokens="50M" data-month="Nov 2026">
+                            <div class="bar-fill" style="height: 16.7%"></div>
+                        </div>
+                        <span class="bar-label">50M</span>
+                        <span class="month-label">Nov 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar unlock" data-tokens="50M" data-month="Dec 2026">
+                            <div class="bar-fill" style="height: 16.7%"></div>
+                        </div>
+                        <span class="bar-label">50M</span>
+                        <span class="month-label">Dec 2026</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar unlock" data-tokens="50M" data-month="Jan 2027">
+                            <div class="bar-fill" style="height: 16.7%"></div>
+                        </div>
+                        <span class="bar-label">50M</span>
+                        <span class="month-label">Jan 2027</span>
+                    </div>
+                    <div class="chart-bar-group">
+                        <div class="chart-bar unlock" data-tokens="50M" data-month="Feb 2027">
+                            <div class="bar-fill" style="height: 16.7%"></div>
+                        </div>
+                        <span class="bar-label">50M</span>
+                        <span class="month-label">Feb 2027</span>
+                    </div>
+                </div>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/feature-icons/rocket.svg" alt="Dual-Phase Evolution">
-                    </div>
-                    <h3>Dual-Phase Evolution</h3>
-                    <p>Starting on Solana, evolving into sovereign Oblium Chain with AI integration</p>
+            
+            <!-- Chart legend -->
+            <div class="chart-legend">
+                <div class="legend-item">
+                    <span class="legend-color cliff"></span>
+                    <span class="legend-text">Cliff Period (No tokens released)</span>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/feature-icons/ai.svg" alt="AI Integration">
-                    </div>
-                    <h3>AI Integration</h3>
-                    <p>Off-chain AI oracles with cryptographic verification and bias transparency</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/feature-icons/performance.svg" alt="High Performance">
-                    </div>
-                    <h3>High Performance</h3>
-                    <p>Built for 1,000-10,000 TPS with seamless cross-chain interoperability</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <img src="assets/feature-icons/impact.svg" alt="Social Impact">
-                    </div>
-                    <h3>Social Impact</h3>
-                    <p>0.5% of network fees allocated to community-led social impact projects</p>
+                <div class="legend-item">
+                    <span class="legend-color unlock"></span>
+                    <span class="legend-text">Monthly Unlocks (50M OBLM/month)</span>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <div class="chart-note">
+            <p><strong>Visualization:</strong> 6-month cliff followed by 6-month linear vesting schedule</p>
+        </div>
+    </div>
+</section>
+                <!-- Governance (DAO) -->
+                <section class="whitepaper-section">
+                    <h2>11. GOVERNANCE (DAO)</h2>
+                    <p>
+                        In Phase 4, the Oblium DAO will launch, giving token holders a voice in shaping the ecosystem's future.
+                    </p>
+                    
+                    <h3>Voting Power</h3>
+                    <p><strong>1 OBLM = 1 Vote</strong> in DAO proposals</p>
+                    <p><strong>Staking Boosts Voting Power:</strong> up to 2× multiplier for long-term stakers</p>
+                    
+                    <h3>Exclusive Access</h3>
+                    <ul>
+                        <li>Developer tools and AI marketplace access</li>
+                        <li>Governance proposal submission rights</li>
+                        <li>Early project access and beta testing</li>
+                    </ul>
+                    
+                    <h3>Utility Integration</h3>
+                    <ul>
+                        <li>NFT minting privileges for active participants</li>
+                        <li>Ecosystem airdrops and reward distributions</li>
+                        <li>Early access to new features and partnerships</li>
+                    </ul>
+                    
+                    <div class="mission-box">
+                        <p><strong>Power to the People:</strong> The Oblium DAO ensures that every holder has a voice in the ecosystem's evolution.</p>
+                    </div>
+                </section>
 
+                <!-- Validated Use Cases & Pilot Programs -->
+                <section class="whitepaper-section">
+                    <h2>12. VALIDATED USE CASES & PILOT PROGRAMS</h2>
+                    
+                    <h3>Education</h3>
+                    <p>
+                        Integration with learning institutions (e.g., Bloom Institute) to issue verifiable 
+                        blockchain diplomas via credential hashes stored on-chain.
+                    </p>
+                    
+                    <h3>Humanitarian Aid</h3>
+                    <p>
+                        Pilot with global NGOs to use anonymized data for AI-driven, transparent resource 
+                        distribution in crisis zones.
+                    </p>
+                    
+                    <h3>Economic Empowerment</h3>
+                    <p>
+                        Future integration with DeFi protocols (e.g., Aave) for microloans backed by 
+                        on-chain reputation and OBLM staking.
+                    </p>
+                </section>
+
+                <!-- Vision & Mission -->
+                <section class="whitepaper-section">
+                    <h2>13. VISION & MISSION</h2>
+                    
+                    <h3>Vision</h3>
+                    <p>
+                        To make Oblium the next-generation meme token that thrives on speed, fun, and 
+                        unstoppable community power.
+                    </p>
+                    
+                    <h3>Mission</h3>
+                    <ul>
+                        <li>Fuse meme culture with cutting-edge blockchain technology</li>
+                        <li>Empower community-driven growth through fair and transparent distribution</li>
+                        <li>Create a multi-layered ecosystem where memes, NFTs, staking, and partnerships amplify value</li>
+                        <li>Build a DAO that gives the community real decision-making power</li>
+                    </ul>
+                    
+                    <h3>Community-Centered Vision</h3>
+                    <p>
+                        Oblium is not designed to take from the community, but to uplift it. Unlike many 
+                        projects that extract value and leave their supporters behind, Oblium ensures the 
+                        community is both the foundation and the beneficiary of its ecosystem. Every initiative, 
+                        from governance to rewards, is built around collective participation and shared growth.
+                    </p>
+                    <p>
+                        Oblium exists to prove that when the community thrives, the project prospers.
+                    </p>
+                    <div class="mission-box">
+                        <p><strong>Oblium isn't here to take — it's here to give back.</strong></p>
+                        <p>This isn't another token made to drain the community. Oblium was built so the community becomes the foundation, the strength, and the reward.</p>
+                        <p>Here, every voice matters. Every holder counts.</p>
+                        <p>We rise together — because Oblium belongs to everyone.</p>
+                    </div>
+                </section>
+
+                <!-- Transition Framework -->
+                <section class="whitepaper-section">
+                    <h2>14. TRANSITION FRAMEWORK — FROM SOLANA TO OBLIUM CHAIN</h2>
+                    
+                    <div class="phase-container">
+                        <div class="phase-item">
+                            <h3>Phase 1 — Launch on Solana (Current Stage)</h3>
+                            <p>Oblium begins its journey on Solana, leveraging its fast, low-cost, and secure infrastructure to establish early growth and global accessibility.</p>
+                            
+                            <h4>Key Highlights</h4>
+                            <p><strong>Token Type:</strong> SPL (Solana Program Library)</p>
+                            
+                            <h4>Advantages:</h4>
+                            <ul>
+                                <li>Lightning-fast transactions and low fees</li>
+                                <li>Access to Solana DEXs (Raydium, Jupiter, Orca)</li>
+                                <li>Wide wallet compatibility (Phantom, Solflare, etc.)</li>
+                            </ul>
+                            
+                            <h4>Purpose:</h4>
+                            <ul>
+                                <li>Build a strong, engaged community</li>
+                                <li>Enable presale, farming, and DAO participation</li>
+                                <li>Begin AI and human-impact integration pilots</li>
+                            </ul>
+                            
+                            <p>Starting on Solana allows Oblium to scale quickly and connect globally while laying the groundwork for its independent blockchain.</p>
+                        </div>
+
+                        <div class="phase-item">
+                            <h3>Phase 2 — Development of ObliumChain (AI + Human-Centered Blockchain)</h3>
+                            <p>ObliumChain represents the next leap — an AI-integrated, human-centered blockchain designed to combine trustless transparency with intelligent computation.</p>
+                            
+                            <h4>Core Features</h4>
+                            <ul>
+                                <li>AI-assisted smart contracts</li>
+                                <li>On-chain verified credential systems</li>
+                                <li>Secure encrypted data layers for human data</li>
+                                <li>AI-optimized Proof-of-Stake consensus for energy efficiency</li>
+                            </ul>
+                            
+                            <h4>Technical Goals</h4>
+                            <ul>
+                                <li>Launch testnet 12–18 months after token launch</li>
+                                <li>Introduce validator incentives and staking systems</li>
+                                <li>Bridge with Solana, Ethereum, and BSC for cross-chain liquidity</li>
+                            </ul>
+                            
+                            <p>ObliumChain will evolve into a dedicated blockchain environment where human creativity and AI innovation coexist and thrive.</p>
+                        </div>
+
+                        <div class="phase-item">
+                            <h3>Phase 3 — Mainnet Launch & Token Migration</h3>
+                            <p>Once ObliumChain is live, OBLM transitions from being a Solana-based token to a fully native coin within its own blockchain ecosystem.</p>
+                            
+                            <h4>Migration Process</h4>
+                            <ul>
+                                <li><strong>Snapshot:</strong> Record all wallet balances holding $OBLM (SPL)</li>
+                                <li><strong>Swap Portal:</strong> Deploy a secure, audited bridge allowing 1:1 token swaps from Solana OBLM → Native OBLM</li>
+                                <li><strong>Lock & Burn:</strong> Swapped Solana tokens are locked or burned to ensure supply integrity</li>
+                                <li><strong>Activation:</strong> Native OBLM goes live — powering staking, governance, and transaction fees on ObliumChain</li>
+                            </ul>
+                            
+                            <p>This process mirrors the evolution of projects like BNB and Polygon — starting on existing blockchains, then transitioning to their own ecosystems.</p>
+                        </div>
+
+                        <div class="phase-item">
+                            <h3>Phase 4 — Expansion & Integration</h3>
+                            <p>Following migration, ObliumChain expands its ecosystem through partnerships, AI integration, and developer tools.</p>
+                            
+                            <h4>Post-Migration Objectives</h4>
+                            <ul>
+                                <li>Launch decentralized AI marketplaces and oracles</li>
+                                <li>Support dApps focused on education, healthcare, and sustainability</li>
+                                <li>Establish global partnerships with NGOs and research institutions</li>
+                                <li>Introduce developer grants to accelerate innovation</li>
+                            </ul>
+                            
+                            <p>ObliumChain becomes the bridge between blockchain and human progress — where community energy fuels real-world change.</p>
+                        </div>
+                    </div>
+
+                    <!-- Transition Table -->
+                    <div class="transition-table">
+                        <h3>Transition Overview</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Stage</th>
+                                    <th>Token Type</th>
+                                    <th>Network</th>
+                                    <th>Utility</th>
+                                    <th>Key Benefit</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Phase 1</td>
+                                    <td>SPL</td>
+                                    <td>Solana</td>
+                                    <td>Farming, Presale, DAO</td>
+                                    <td>Early entry and liquidity</td>
+                                </tr>
+                                <tr>
+                                    <td>Phase 2</td>
+                                    <td>—</td>
+                                    <td>Development</td>
+                                    <td>AI + Blockchain Integration</td>
+                                    <td>Governance and technical influence</td>
+                                </tr>
+                                <tr>
+                                    <td>Phase 3</td>
+                                    <td>Native Coin</td>
+                                    <td>ObliumChain</td>
+                                    <td>Staking, Gas, AI Utility</td>
+                                    <td>1:1 token upgrade + yield opportunities</td>
+                                </tr>
+                                <tr>
+                                    <td>Phase 4</td>
+                                    <td>Native Ecosystem</td>
+                                    <td>Multi-chain</td>
+                                    <td>dApps + AI Market</td>
+                                    <td>Expansion and real-world utility</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>End Vision:</strong> The Oblium token (OBLM) will evolve from a Solana-backed digital asset into the native coin of the ObliumChain, powering a global AI-driven ecosystem built on transparency, speed, and purpose.</p>
+                        <p><strong>Oblium isn't just migrating — it's maturing. From meme to mission. From Solana to sovereignty.</strong></p>
+                    </div>
+                </section>
+
+                <!-- Roadmap -->
+                <section class="whitepaper-section">
+                    <h2>15. ROADMAP</h2>
+                    
+                    <div class="roadmap-container">
+                        <div class="roadmap-phase">
+                            <h3>Phase 1 – Foundation & Pre-Launch</h3>
+                            <p class="timeline">(Q4 2025 – Q1 2026)</p>
+                            <p class="phase-goal">Building our community bedrock and technical infrastructure</p>
+                            
+                            <div class="phase-details">
+                                <div class="detail-category">
+                                    <h4>Community & Growth</h4>
+                                    <ul>
+                                        <li>Launch Oblium Ambassador Program</li>
+                                        <li>Initiate Point-Based Farming System ("Mining Phase")</li>
+                                        <li>Execute Public Presale (21st November 2025)</li>
+                                        <li>Launch Meme Contest Series with farming points</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="detail-category">
+                                    <h4>Technical Development</h4>
+                                    <ul>
+                                        <li>Complete smart contract audits</li>
+                                        <li>Conduct first point-to-token conversion</li>
+                                        <li>Begin Oblium Chain architecture design</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="phase-outcome"><strong>Goal:</strong> Establish the core community and finalize pre-launch infrastructure</p>
+                        </div>
+
+                        <div class="roadmap-phase">
+                            <h3>Phase 2 – Token Launch & Initial Conversion</h3>
+                            <p class="timeline">(March 2026)</p>
+                            <p class="phase-goal">Official token debut and liquidity establishment</p>
+                            
+                            <div class="phase-details">
+                                <div class="detail-category">
+                                    <h4>Token Launch</h4>
+                                    <ul>
+                                        <li>Token Generation Event (TGE) with fair claim process</li>
+                                        <li>Launch on Raydium DEX + top-tier CEX listings</li>
+                                        <li>Distribute 60% of airdrop tokens to community</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="detail-category">
+                                    <h4>Product Development</h4>
+                                    <ul>
+                                        <li>Deploy Oblium Wallet Beta</li>
+                                        <li>Implement AI-Powered Reward Monitoring</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="phase-outcome"><strong>Goal:</strong> Officially launch $OBLM token and establish market presence</p>
+                        </div>
+
+                        <div class="roadmap-phase">
+                            <h3>Phase 3 – Ecosystem Activation</h3>
+                            <p class="timeline">(Q2 2026)</p>
+                            <p class="phase-goal">Building utility layers and community-driven economy</p>
+                            
+                            <div class="phase-details">
+                                <div class="detail-category">
+                                    <h4>Ecosystem Expansion</h4>
+                                    <ul>
+                                        <li>Release first NFT Collection with farming boosts</li>
+                                        <li>Introduce Staking & Reward System</li>
+                                        <li>Enhance farming with AI scoring systems</li>
+                                        <li>Establish Oblium Treasury for grants</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="detail-category">
+                                    <h4>Technical Evolution</h4>
+                                    <ul>
+                                        <li>Begin AI module integration</li>
+                                        <li>Launch Oblium Testnet for developers</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="phase-outcome"><strong>Goal:</strong> Activate utility layers and community-driven economy</p>
+                        </div>
+
+                        <div class="roadmap-phase">
+                            <h3>Phase 4 – Value Expansion</h3>
+                            <p class="timeline">(Q3–Q4 2026)</p>
+                            <p class="phase-goal">Expanding reach, governance, and real-world integrations</p>
+                            
+                            <div class="phase-details">
+                                <div class="detail-category">
+                                    <h4>Governance & Integration</h4>
+                                    <ul>
+                                        <li>Activate DAO Governance with voting rights</li>
+                                        <li>Deploy Cross-Chain Bridges (Solana, Ethereum, BSC)</li>
+                                        <li>Introduce GameFi and MemeFi dApps</li>
+                                        <li>Onboard strategic Web3 partners</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="detail-category">
+                                    <h4>AI Innovation</h4>
+                                    <ul>
+                                        <li>Release AI-driven meme creation tools</li>
+                                        <li>Begin mainnet preparation for Oblium Chain</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="phase-outcome"><strong>Goal:</strong> Expand Oblium's reach and real-world integrations</p>
+                        </div>
+
+                        <div class="roadmap-phase">
+                            <h3>Phase 5 – Global Dominance</h3>
+                            <p class="timeline">(2027+)</p>
+                            <p class="phase-goal">Establishing next-generation AI + Human blockchain ecosystem</p>
+                            
+                            <div class="phase-details">
+                                <div class="detail-category">
+                                    <h4>Mainnet & Scale</h4>
+                                    <ul>
+                                        <li>Launch Oblium Mainnet (Oblium Chain)</li>
+                                        <li>Expand into Metaverse experiences</li>
+                                        <li>Onboard enterprise and Web3 integrations</li>
+                                        <li>Introduce Oblium AI Assistant</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="phase-outcome"><strong>Goal:</strong> Position Oblium as the bridge between AI innovation, meme culture, and human blockchain creativity</p>
+                        </div>
+                    </div>
+
+                    <!-- KPIs -->
+                    <div class="kpi-section">
+                        <h3>Key Performance Indicators (KPIs)</h3>
+                        <div class="kpi-grid">
+                            <div class="kpi-item">50K+ Holders</div>
+                            <div class="kpi-item">3+ CEX Listings</div>
+                            <div class="kpi-item">10+ Global Contests</div>
+                            <div class="kpi-item">1B+ Meme Impressions</div>
+                        </div>
+                    </div>
+
+                    <!-- Innovation Timeline -->
+                    <div class="innovation-timeline">
+                        <h3>Key Innovation Timeline</h3>
+                        <div class="timeline-grid">
+                            <div class="timeline-period">
+                                <h4>2025–2026</h4>
+                                <ul>
+                                    <li>Community Farming System</li>
+                                    <li>AI Reward Monitoring</li>
+                                    <li>NFT Utility Integration</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-period">
+                                <h4>2026–2027</h4>
+                                <ul>
+                                    <li>Oblium Testnet</li>
+                                    <li>Cross-Chain Bridges</li>
+                                    <li>DAO Governance</li>
+                                </ul>
+                            </div>
+                            <div class="timeline-period">
+                                <h4>2027+</h4>
+                                <ul>
+                                    <li>Oblium Mainnet Launch</li>
+                                    <li>AI Assistant Deployment</li>
+                                    <li>Metaverse Integration</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Security & Audits -->
+                <section class="whitepaper-section">
+                    <h2>16. SECURITY & AUDITS</h2>
+                    <p>
+                        All smart contracts are subject to independent audits by recognized firms before TGE and chain migration.
+                    </p>
+                    <p>
+                        Addresses, audit reports, and bug bounties will be publicly available to maintain community trust and transparency.
+                    </p>
+                    <div class="highlight-box">
+                        <p><strong>Security First:</strong> Regular security audits, bug bounty programs, and transparent reporting ensure the safety of community funds and ecosystem integrity.</p>
+                    </div>
+                </section>
+
+                <!-- Community First -->
+                <section class="whitepaper-section">
+                    <h2>17. COMMUNITY FIRST</h2>
+                    <p>
+                        Oblium is powered by its people — the Oblium Army.
+                    </p>
+                    <p>
+                        From meme creation to governance, every voice shapes the ecosystem.
+                    </p>
+                    
+                    <h3>Programs include:</h3>
+                    <ul>
+                        <li>Ambassador Program</li>
+                        <li>Meme Contests (Create-to-Earn)</li>
+                        <li>Transparent Treasury</li>
+                        <li>Open DAO Governance</li>
+                    </ul>
+                    
+                    <div class="mission-box">
+                        <p><strong>Together, we build a community that laughs, learns, and earns — at meme speed.</strong></p>
+                    </div>
+                </section>
+
+                <!-- Conclusion -->
+                <section class="whitepaper-section">
+                    <h2>18. CONCLUSION</h2>
+                    <p>
+                        Oblium is where memes meet meaning — blending humor, innovation, and humanity.
+                    </p>
+                    <p>
+                        With transparent tokenomics, fair governance, and a bold transition plan toward its own AI-driven blockchain, 
+                        Oblium is poised to redefine what a meme project can achieve.
+                    </p>
+                    <div class="highlight-box">
+                        <p><strong>Welcome to Oblium — where every meme builds the future.</strong></p>
+                    </div>
+                </section>
+
+                <!-- Disclaimer -->
+                <section class="whitepaper-section">
+                    <h2>19. DISCLAIMER</h2>
+                    <p>
+                        Oblium (OBLM) is a meme-driven Solana token created for community building and entertainment.
+                    </p>
+                    <p>
+                        It is not a registered security or investment product.
+                    </p>
+                    <p>
+                        OBLM's value depends on community participation and market forces — not guarantees.
+                    </p>
+                    <p>
+                        <strong>Always DYOR (Do Your Own Research) before participating.</strong>
+                    </p>
+                    <div class="mission-box">
+                        <p><strong>Oblium's mission is to connect, entertain, and empower, not to promise profits.</strong></p>
+                    </div>
+                </section>
+
+                <!-- Waitlist CTA -->
+                <section class="waitlist-cta">
+                    <div class="waitlist-container">
+                        <h3>Ready to Join the Oblium Revolution?</h3>
+                        <p>Get notified when mining starts and be part of the future of AI-powered blockchain</p>
+                        <a href="index.html#waitlist" class="cta-button primary">
+                            <img src="assets/email-icon.svg" alt="Email" class="btn-icon">
+                            Join Mining Waitlist
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
@@ -200,10 +1144,10 @@
                     </div>
                     <p>Where memes meet mission. Powered by community, driven by AI.</p>
                     <div class="social-links">
-                        <a href="https://discord.gg/m5MAy2xct" target="_blank" class="social-link">
+                        <a href="https://discord.gg/4UeqJ4qw" target="_blank" class="social-link">
                             <img src="assets/discord-icon.svg" alt="Discord">
                         </a>
-                        <a href="https://x.com/obluimchain?s=21" target="_blank" class="social-link">
+                        <a href="https://x.com/obliumchain" target="_blank" class="social-link">
                             <img src="assets/twitter-icon.svg" alt="Twitter">
                         </a>
                         <a href="https://t.me/obliumtoken" target="_blank" class="social-link">
@@ -214,15 +1158,15 @@
                 <div class="footer-links">
                     <div class="link-group">
                         <h4>Project</h4>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                         <a href="whitepaper.html">Whitepaper</a>
-                        <a href="#waitlist">Waitlist</a>
+                        <a href="index.html#waitlist">Waitlist</a>
                     </div>
                     <div class="link-group">
                         <h4>Community</h4>
-                        <a href="https://t.me/obliumchain/1" target="_blank">Telegram</a>
-                        <a href="https://discord.gg/m5MAy2xct" target="_blank">Discord</a>
-                        <a href="https://x.com/obluimchain?s=21" target="_blank">Twitter</a>
+                        <a href="https://t.me/obliumtoken" target="_blank">Telegram</a>
+                        <a href="https://discord.gg/4UeqJ4qw" target="_blank">Discord</a>
+                        <a href="https://x.com/obliumchain" target="_blank">Twitter</a>
                     </div>
                 </div>
             </div>
@@ -231,33 +1175,7 @@
             </div>
         </div>
     </footer>
-<!-- Social Media Popup -->
-<div class="social-popup" id="socialPopup">
-    <div class="popup-overlay"></div>
-    <div class="popup-content">
-        <div class="popup-header">
-            <h3>Join Our Community</h3>
-            <button class="popup-close" id="closePopup">&times;</button>
-        </div>
-        <div class="popup-body">
-            <p>Connect with us on our social platforms:</p>
-            <div class="social-icons-popup">
-                <a href="https://t.me/obliumchain/1" class="social-icon-popup" target="_blank">
-                    <img src="assets/telegram-icon.svg" alt="Telegram">
-                    <span>Telegram</span>
-                </a>
-                <a href="https://discord.gg/m5MAy2xct" class="social-icon-popup" target="_blank">
-                    <img src="assets/discord-icon.svg" alt="Discord">
-                    <span>Discord</span>
-                </a>
-                <a href="https://x.com/obluimchain?s=21" class="social-icon-popup" target="_blank">
-                    <img src="assets/twitter-icon.svg" alt="Twitter">
-                    <span>Twitter</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
+
     <script src="script.js"></script>
 </body>
 </html>
